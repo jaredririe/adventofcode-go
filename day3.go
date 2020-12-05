@@ -1,9 +1,6 @@
 package main
 
-const (
-	tree = "#"
-	open = "."
-)
+const tree = "#"
 
 type Slope struct {
 	Right int
