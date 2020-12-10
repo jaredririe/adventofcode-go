@@ -19,23 +19,8 @@ func TwoSum1(input []int) int {
 }
 
 func TwoSum2(input []int) int {
-
 	target := 2020
-
-	hash := make(map[int]int)
-
-	for i1, v1 := range input {
-
-		hash[v1] = i1
-
-		complement := target - v1
-		if i2, ok := hash[complement]; ok {
-			fmt.Println(v1, input[i2])
-			return v1 * input[i2]
-		}
-	}
-
-	return -1
+	return twoSum(input, target)
 }
 
 func ThreeSum(input []int) int {
